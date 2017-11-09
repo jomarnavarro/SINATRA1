@@ -14,3 +14,7 @@ end
 get '/proyectos' do
   slim :proyectos
 end    
+
+not_found do
+  slim :not_found
+end
