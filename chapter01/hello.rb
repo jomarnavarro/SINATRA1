@@ -1,17 +1,12 @@
 require 'sinatra'
-require 'sinatra/reloader' if development? 
+#require 'sinatra/reloader' if development? 
 
 get '/hello' do
   "Hello Sinatra!"
 end
 
-get '/frank' do
-  name = "Frank"
-  "Hello #{name}"
-end
-
 get '/:name' do
-  name = params[:name]
+  name = params[:name].capitalize
   "Hi there #{name}!"
 end
 
