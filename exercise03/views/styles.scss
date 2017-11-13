@@ -19,6 +19,8 @@ header h1 {
   padding-left: 84px;
 }
 
+label { display: block; }
+
 @mixin tabs ($background: blue, $color: yellow) {
   ul {
     list-style: none;
