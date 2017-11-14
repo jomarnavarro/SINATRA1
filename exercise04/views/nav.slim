@@ -5,11 +5,10 @@ nav
     li
       a href="/about" title="About" About
     li
-      a href="/contact" title="Contact" Contact
+      a href="/contact" title="Contact" Contact 
     li
-      - if @session_info[:admin]
-      a href="/logout" title="Logout" Logout 
-      - else
-      a href="/login" title="Login" Login  
+      a href="/songs" title="Songs" Songs
+    li    
+      a href="/login" title="Login" Login
     li
-      a href="/songs" title="Songs" Songs  
+      a href="/logout" title="Logout" Logout
